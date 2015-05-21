@@ -33,7 +33,7 @@ public class MatchingEngine {
 	 * will populate it with the matching deals. During a full match, where a
 	 * deal matches on currency pair and lot size there will be one deal in this
 	 * ArrayList. In the case of a partial match there will be > 1 deal in this
-	 * ArrayList.
+	 * ArrayList.  
 	 * 
 	 * Returns: NOTMATCHED(0), FULLMATCH(1), PARTIALMATCH(2);
 	 * 
@@ -42,7 +42,7 @@ public class MatchingEngine {
 	public static int match(DealEntity dealEntity,
 			ArrayList<DealEntity> matchedDealEntity) {
 
-		boolean matchFound = false;
+		boolean matchFound = false; 
 		boolean partialMatchFound = false;
 
 		// Construct the key to lookup matching deals
@@ -51,7 +51,7 @@ public class MatchingEngine {
 		String lookupDealKey = dealEntity.getContractName()
 				+ dealEntity.getTransactionType();
 
-		int lots = (int) dealEntity.getLots();
+		int lots = (int) dealEntity.getLots(); 
 
 		// Use they key from the event to see if we have an match in our deal
 		// cache. If we find a match look for matching lots
