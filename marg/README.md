@@ -1,1 +1,1 @@
-After checking out from GIT, compile using 'mvn compile', and execute using 'mvn exec:java'
+# marg readme
